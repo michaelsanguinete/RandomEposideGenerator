@@ -27,13 +27,26 @@ namespace Tela
 
             Random r = new Random();
             int posicao = r.Next(linha.Length);
-            string _nome = linha[posicao];
-            Console.WriteLine(_nome);
+            string nome = linha[posicao];
+            textBox1.AppendText(nome);
+            
+
+            
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void fontDialog1_Apply(object sender, EventArgs e)
         {
             
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

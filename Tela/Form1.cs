@@ -29,6 +29,11 @@ namespace Tela
 
         public void button1_Click(object sender, EventArgs e)
         {
+            if (!checkBox1.Checked && !checkBox2.Checked)
+            {
+                MessageBox.Show("Marque uma opção!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
             if (checkBox1.Checked)
             {
                 Form2 teste = new Form2();
